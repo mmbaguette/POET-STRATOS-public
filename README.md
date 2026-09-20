@@ -1,6 +1,6 @@
 # POET-STRATOS — Camera Control and Space-to-Ground Data Link
 
-Flight software for a short-wave infrared (SWIR) astronomy payload flown on a stratospheric balloon from the Canadian Space Agency's balloon base in Timmins, Ontario, in **[MONTH] 2025**, in partnership with the French space agency (CNES).
+Flight software for a short-wave infrared (SWIR) astronomy payload flown on a stratospheric balloon from the Canadian Space Agency's balloon base in Timmins, Ontario, in **August 2025**, in partnership with the French space agency (CNES).
 
 The payload was a technology demonstration for [POET](https://exoplanetes.umontreal.ca/en/a-new-canadian-telescope-to-study-exoplanets/), a proposed Canadian exoplanet space telescope. The goal was to show that a **commercial off-the-shelf infrared camera** — rather than a custom space-qualified sensor — can produce usable astronomical images in a near-space environment, which would substantially lower the cost of the eventual satellite mission.
 
@@ -180,12 +180,16 @@ The payload connected to the gondola's network through a custom-built interface 
 
 ## Results
 
-- The payload flew and the communications system operated for the duration of the flight. *(Add flight date and duration.)*
+- The payload flew for 3 hours, below the planned flight duration, and the communications system operated for the duration of the flight. 
 - Camera settings were adjusted from the ground during flight, and temperature was correlated against imaging performance in real time using the metadata written into each frame's headers.
 - Full FITS frames, compressed preview images, and photometry were all returned to the ground station.
 - The **PASTIS link proved far more reliable than its documentation suggested** — comparable to a home Wi-Fi connection. See below.
 
-*(Add: number of frames captured, total data volume downlinked, achieved throughput, and a sample image if cleared for release.)*
+*100+ frames captured, >5GB total data volume downlinked, ~300 kb/s throughput.*
+
+Captured images looked something like this (*actual data is private*):
+<img width="637" height="512" alt="image" src="https://github.com/user-attachments/assets/eeddfa0d-a4e0-440e-8b9d-c51d6860a95b" />
+
 
 ---
 
@@ -221,9 +225,11 @@ None of this was wasted — I learned a great deal building it — but a second 
 
 ## Credits
 
-This was one student's contribution to a multidisciplinary team. The POET-STRATOS payload was led by **Dr. Stanimir Metchev** (Department of Physics and Astronomy / Institute for Earth and Space Exploration, Western University), with flight operations support from the **Canadian Space Agency** and **CNES** at the Timmins Stratospheric Balloon Base.
+This was one student's contribution to a multidisciplinary team. The POET-STRATOS payload was led by **Dr. Stanimir Metchev** (Department of Physics and Astronomy, Western University), with flight operations support from the **Canadian Space Agency** and **CNES** at the Timmins Stratospheric Balloon Base.
 
-*(Add teammates and their contributions.)*
+__Noel Wajnblum__: First research student, designed and assembled the payload \
+__Abilene Jull__: Wrote the light curve generation code, photogrammetry, and astropy
+
 
 **Press:** [CBC News — Western University prof, students in northern Ontario to launch tennis ball-sized camera into the stratosphere](https://www.cbc.ca/news/canada/sudbury/western-university-weather-balloon-experiment-timmins-1.7619343)
 
