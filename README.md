@@ -180,7 +180,7 @@ The payload connected to the gondola's network through a custom-built interface 
 
 ## Results
 
-- The payload flew for 3 hours, below the planned flight duration, and the communications system operated for the duration of the flight. 
+- The payload flew for only 3 hours because of a mysterious issue with CNES's balloon, but the communications system operated for the duration of the flight. 
 - Camera settings were adjusted from the ground during flight, and temperature was correlated against imaging performance in real time using the metadata written into each frame's headers.
 - Full FITS frames, compressed preview images, and photometry were all returned to the ground station.
 - The **PASTIS link proved far more reliable than its documentation suggested** — comparable to a home Wi-Fi connection. See below.
